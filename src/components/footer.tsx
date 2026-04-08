@@ -37,18 +37,20 @@ export function Footer() {
         <div className="h-px w-full bg-slate-100 dark:bg-white/5 mb-12" />
 
         {/* Main Links Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-12 mb-16">
-          <div className="lg:col-span-1">
-            <h3 className="font-bold text-sm uppercase tracking-wider text-slate-800 dark:text-slate-200 mb-6 font-heading">Testimonials</h3>
+        <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-7 gap-12 mb-16">
+          <div className="lg:col-span-2">
+            <h3 className="font-bold text-sm uppercase tracking-wider text-slate-800 dark:text-slate-200 mb-6 font-heading">Company Information</h3>
             <ul className="space-y-4">
               <li><a href="/about" className="text-slate-500 dark:text-slate-400 hover:text-brand-primary transition-colors">About Us</a></li>
               <li><a href="/testimonials" className="text-slate-500 dark:text-slate-400 hover:text-brand-primary transition-colors">Testimonials</a></li>
+              <li><a href="/gallery/windows" className="text-slate-500 dark:text-slate-400 hover:text-brand-primary transition-colors">Window Gallery</a></li>
+              <li><a href="/gallery/doors" className="text-slate-500 dark:text-slate-400 hover:text-brand-primary transition-colors">Door Gallery</a></li>
               <li><a href="/contact" className="text-slate-500 dark:text-slate-400 hover:text-brand-primary transition-colors">Contact</a></li>
             </ul>
           </div>
 
-          <div className="lg:col-span-1">
-            <h3 className="font-bold text-sm uppercase tracking-wider text-slate-800 dark:text-slate-200 mb-6 font-heading">Navigation</h3>
+          <div className="lg:col-span-2">
+            <h3 className="font-bold text-sm uppercase tracking-wider text-slate-800 dark:text-slate-200 mb-6 font-heading">Services</h3>
             <ul className="space-y-4">
               <li><a href="/windows" className="text-slate-500 dark:text-slate-400 hover:text-brand-primary transition-colors">Window Repair & Replacement</a></li>
               <li><a href="/doors" className="text-slate-500 dark:text-slate-400 hover:text-brand-primary transition-colors">Door Repair & Replacement</a></li>
