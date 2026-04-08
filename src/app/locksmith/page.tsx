@@ -27,14 +27,14 @@ export default function LocksmithPage() {
       <section className="relative pt-32 pb-20 px-4 lg:px-8 max-w-[1600px] mx-auto overflow-hidden">
         <div className="relative w-full h-[60vh] min-h-[500px] rounded-[3rem] overflow-hidden shadow-2xl flex flex-col items-center justify-center text-center px-4">
           <Image 
-            src="https://images.unsplash.com/photo-1510127034890-df27508e3f0c?q=80&w=2070&auto=format&fit=crop" 
+            src="/images/locksmith-banner.jpg" 
             alt="Professional Locksmith Services" 
             fill
             className="object-cover transition-transform duration-1000 scale-105"
             priority
           />
-          <div className="absolute inset-0 bg-brand-text/60 mix-blend-multiply"></div>
-          <div className="absolute inset-0 bg-gradient-to-t from-brand-text/80 via-transparent to-brand-text/40"></div>
+          <div className="absolute inset-0 bg-brand-text/30 mix-blend-multiply"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-brand-text/40 via-transparent to-brand-text/10"></div>
           
           <div className="relative z-10 max-w-4xl mx-auto space-y-8">
             <motion.div 
@@ -120,7 +120,7 @@ export default function LocksmithPage() {
             className="relative h-[500px] rounded-[2.5rem] overflow-hidden shadow-2xl"
           >
             <Image 
-              src="https://images.unsplash.com/photo-1549405232-a56767fa4b61?q=80&w=2070&auto=format&fit=crop" 
+              src="/images/locked-out.jpg" 
               alt="Locksmith working on door" 
               fill
               className="object-cover"
@@ -144,8 +144,8 @@ export default function LocksmithPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-32 pt-16">
           <motion.div {...fadeIn} className="order-2 lg:order-1 relative h-[500px] rounded-[2.5rem] overflow-hidden shadow-2xl">
             <Image 
-              src="https://images.unsplash.com/photo-1508923567004-3a6b8004f3d7?q=80&w=2070&auto=format&fit=crop" 
-              alt="Modern door lock installation" 
+              src="/images/lock-replacement.jpg" 
+              alt="Professional door lock replacement" 
               fill
               className="object-cover"
             />
@@ -153,9 +153,6 @@ export default function LocksmithPage() {
           </motion.div>
           
           <motion.div {...fadeIn} className="order-1 lg:order-2">
-            <div className="w-12 h-12 rounded-2xl bg-blue-500/10 flex items-center justify-center text-blue-500 mb-6">
-              <Wrench className="w-6 h-6" />
-            </div>
             <h3 className="text-3xl md:text-4xl font-bold text-brand-text dark:text-white mb-6 tracking-tight">
               Lock Replacement & Maintenance
             </h3>
@@ -192,9 +189,6 @@ export default function LocksmithPage() {
         {/* CHANGING & UPGRADING LOCKS */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-32 pt-16">
           <motion.div {...fadeIn}>
-            <div className="w-12 h-12 rounded-2xl bg-brand-cta/10 flex items-center justify-center text-brand-cta mb-6">
-              <ShieldCheck className="w-6 h-6" />
-            </div>
             <h3 className="text-3xl md:text-4xl font-bold text-brand-text dark:text-white mb-6 tracking-tight">
               Changing & Upgrading Your Security
             </h3>
@@ -223,7 +217,7 @@ export default function LocksmithPage() {
           
           <motion.div {...fadeIn} className="relative h-[500px] rounded-[2.5rem] overflow-hidden shadow-2xl">
             <Image 
-              src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=2070&auto=format&fit=crop" 
+              src="/images/lock-security.jpg" 
               alt="High security lock hardware" 
               fill
               className="object-cover"
@@ -236,8 +230,8 @@ export default function LocksmithPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center pt-16">
           <motion.div {...fadeIn} className="order-2 lg:order-1 relative h-[500px] rounded-[2.5rem] overflow-hidden shadow-2xl">
             <Image 
-              src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=2069&auto=format&fit=crop" 
-              alt="Lock mechanism repair" 
+              src="/images/smashed-door.jpg" 
+              alt="Burglary damage repair" 
               fill
               className="object-cover"
             />
@@ -245,9 +239,6 @@ export default function LocksmithPage() {
           
           <motion.div {...fadeIn} className="order-1 lg:order-2 space-y-8">
             <div className="space-y-4">
-              <div className="w-12 h-12 rounded-2xl bg-blue-500/10 flex items-center justify-center text-blue-500">
-                <Cog className="w-6 h-6" />
-              </div>
               <h3 className="text-3xl font-bold text-brand-text dark:text-white tracking-tight leading-tight">
                 Failed Locking Mechanisms
               </h3>
@@ -257,9 +248,6 @@ export default function LocksmithPage() {
             </div>
 
             <div className="space-y-4 pt-8 border-t border-slate-100 dark:border-slate-800">
-              <div className="w-12 h-12 rounded-2xl bg-red-500/10 flex items-center justify-center text-red-500">
-                <ShieldAlert className="w-6 h-6" />
-              </div>
               <h3 className="text-3xl font-bold text-brand-text dark:text-white tracking-tight leading-tight">
                 Repairing Burglary Damage
               </h3>
@@ -324,6 +312,65 @@ export default function LocksmithPage() {
               <div className="text-[10px] font-bold uppercase tracking-widest text-slate-400">Satisfaction</div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* FAQ SECTION */}
+      <section className="py-24 px-4 max-w-4xl mx-auto">
+        <div className="text-center mb-16">
+          <motion.h2 
+            {...fadeIn}
+            className="text-3xl md:text-5xl font-bold text-brand-text dark:text-white mb-4 tracking-tight"
+          >
+            Locksmith Service FAQ
+          </motion.h2>
+          <motion.p 
+            {...fadeIn}
+            transition={{ delay: 0.1 }}
+            className="text-slate-500 dark:text-slate-400"
+          >
+            Common questions about our Hampshire locksmith and security services.
+          </motion.p>
+        </div>
+        
+        <div className="space-y-4">
+          {[
+            {
+              q: "Do you offer emergency 24/7 locksmith services?",
+              a: "Yes, we provide 24/7 emergency response across Hampshire for lockouts, broken keys, and securing properties after break-ins. We aim to get you back in safely and quickly."
+            },
+            {
+              q: "Do you use non-destructive entry methods?",
+              a: "Absolutely. We prioritize non-destructive entry techniques to gain access to your property without damaging your door, frame, or locking mechanism whenever possible."
+            },
+            {
+              q: "Can you replace locks on UPVC and composite doors?",
+              a: "Yes, we are specialists in UPVC and composite door security. We can replace faulty gearboxes, center-cases, and upgrade your cylinders to anti-snap, high-security versions."
+            },
+            {
+              q: "How quickly can you attend an emergency lockout?",
+              a: "We understand the stress of being locked out. We aim to be on-site as quickly as possible, typically arriving within 30-60 minutes for emergency calls across Hampshire."
+            },
+            {
+              q: "Do you charge a call-out fee for quotes?",
+              a: "No, we offer free call-outs for quotes and security assessments. We believe in transparent, upfront pricing, so you'll know exactly what the job costs before we start."
+            }
+          ].map((faq, index) => (
+            <motion.div 
+              key={index}
+              {...fadeIn}
+              transition={{ delay: index * 0.1, duration: 0.6 }}
+              className="p-8 rounded-3xl border border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm"
+            >
+              <h4 className="text-lg font-bold text-brand-text dark:text-white mb-4 flex items-center gap-3">
+                <span className="w-8 h-8 rounded-full bg-brand-primary/10 text-brand-primary flex items-center justify-center shrink-0 text-sm font-bold">?</span>
+                {faq.q}
+              </h4>
+              <p className="text-slate-500 dark:text-slate-400 leading-relaxed pl-11">
+                {faq.a}
+              </p>
+            </motion.div>
+          ))}
         </div>
       </section>
 

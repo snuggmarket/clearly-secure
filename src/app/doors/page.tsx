@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import StructuredData from "@/components/structured-data";
+import { BeamsBackground } from "@/components/ui/beams-background";
 
 export default function DoorsPage() {
   const regions = [
@@ -86,9 +87,7 @@ export default function DoorsPage() {
       <section className="py-24 px-4 lg:px-8 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-32">
           <motion.div {...fadeIn}>
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 dark:bg-blue-900/30 border border-blue-100 dark:border-blue-800 text-blue-600 dark:text-blue-400 text-sm font-bold tracking-widest uppercase mb-6">
-              Expert Advice
-            </div>
+
             <h2 className="text-3xl md:text-5xl font-bold text-brand-text dark:text-white mb-8 tracking-tight">
               Why Replace When You <br/> Can Repair?
             </h2>
@@ -144,18 +143,16 @@ export default function DoorsPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-32 pt-16">
           <motion.div {...fadeIn} className="order-2 lg:order-1 relative h-[500px] rounded-[2.5rem] overflow-hidden shadow-2xl">
             <Image 
-              src="/images/windows/glazed-window-1.jpg" 
-              alt="Mist Condensation Repair" 
+              src="/images/doors/door13.jpg" 
+              alt="Door Alignment and Hinge Repair" 
               fill
-              className="object-cover"
+              className="object-cover object-[center_80%]"
             />
             <div className="absolute inset-0 bg-black/20"></div>
           </motion.div>
           
           <motion.div {...fadeIn} className="order-1 lg:order-2">
-            <div className="w-12 h-12 rounded-2xl bg-blue-500/10 flex items-center justify-center text-blue-500 mb-6">
-              <Settings className="w-6 h-6" />
-            </div>
+
             <h3 className="text-3xl md:text-4xl font-bold text-brand-text dark:text-white mb-6 tracking-tight">
               Sticking Doors & Alignment
             </h3>
@@ -192,9 +189,7 @@ export default function DoorsPage() {
         {/* DETAILED SERVICE: HANDLES */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-32 pt-16">
           <motion.div {...fadeIn}>
-            <div className="w-12 h-12 rounded-2xl bg-brand-cta/10 flex items-center justify-center text-brand-cta mb-6">
-              <GripVertical className="w-6 h-6" />
-            </div>
+
             <h3 className="text-3xl md:text-4xl font-bold text-brand-text dark:text-white mb-6 tracking-tight">
               Replacing Door Handles
             </h3>
@@ -225,7 +220,7 @@ export default function DoorsPage() {
           
           <motion.div {...fadeIn} className="relative h-[500px] rounded-[2.5rem] overflow-hidden shadow-2xl">
             <Image 
-              src="/images/windows/window-handle.jpg" 
+              src="/images/doors/door-fittings.jpg" 
               alt="Door Hardware Repairs" 
               fill
               className="object-cover"
@@ -247,9 +242,7 @@ export default function DoorsPage() {
           
           <motion.div {...fadeIn} className="order-1 lg:order-2 space-y-8">
             <div className="space-y-4">
-              <div className="w-12 h-12 rounded-2xl bg-blue-500/10 flex items-center justify-center text-blue-500">
-                <Sparkles className="w-6 h-6" />
-              </div>
+
               <h3 className="text-3xl font-bold text-brand-text dark:text-white tracking-tight leading-tight">
                 Re-Glaze Replacement Door Panels
               </h3>
@@ -259,9 +252,7 @@ export default function DoorsPage() {
             </div>
 
             <div className="space-y-4 pt-8 border-t border-slate-100 dark:border-slate-800">
-              <div className="w-12 h-12 rounded-2xl bg-brand-primary/10 flex items-center justify-center text-brand-primary">
-                <Layers className="w-6 h-6" />
-              </div>
+
               <h3 className="text-3xl font-bold text-brand-text dark:text-white tracking-tight leading-tight">
                 Hinge Adjustment & Prevention
               </h3>
@@ -281,26 +272,34 @@ export default function DoorsPage() {
         </div>
 
         {/* DETAILED SERVICE: REPLACEMENT DOORS */}
-        <div className="pt-16 max-w-5xl mx-auto">
-            <motion.div {...fadeIn} className="bg-slate-950 rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden">
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,#1e293b_0%,transparent_70%)] opacity-30"></div>
-                <div className="relative z-10 space-y-8">
-                    <div className="w-16 h-16 rounded-2xl bg-brand-cta/20 flex items-center justify-center text-brand-cta mx-auto">
-                        <Hammer className="w-8 h-8" />
+        <div className="pt-16 w-full px-4 lg:px-8">
+            <BeamsBackground className="rounded-[2.5rem] bg-slate-950 p-8 md:p-12 hover:shadow-2xl hover:shadow-blue-950/20 transition-all duration-700">
+                <motion.div 
+                    {...fadeIn} 
+                    className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-12"
+                >
+                    <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-6 max-w-3xl">
+                        <div className="flex flex-col md:flex-row items-center gap-6">
+                            <div className="w-14 h-14 rounded-2xl bg-brand-cta/20 flex items-center justify-center text-brand-cta shrink-0">
+                                <Hammer className="w-7 h-7" />
+                            </div>
+                            <h3 className="text-3xl md:text-4xl font-bold text-white tracking-tight leading-tight">
+                                Looking for <br className="hidden md:block" /> Replacement Doors?
+                            </h3>
+                        </div>
+                        <p className="text-white/70 text-base leading-relaxed">
+                            When repair isn't enough, we offer a wide range of stylish, high-performance replacements. From precise measurement to professional fitting across Hampshire.
+                        </p>
                     </div>
-                    <h3 className="text-3xl md:text-5xl font-bold text-white tracking-tight leading-tight">
-                        Replacement Doors
-                    </h3>
-                    <p className="text-white/70 text-lg max-w-2xl mx-auto leading-relaxed">
-                        There comes a time when replacing your doors is the better option than repairing them. We offer a wide range of door styles and colors to suit your property. We'll visit your site to take precise measurements and provide a quote with a selection of options.
-                    </p>
-                    <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-                        <Link href="/contact" className="w-full sm:w-auto bg-brand-cta hover:bg-brand-cta-hover text-white px-8 py-4 rounded-full font-bold transition-all shadow-xl">
-                            Request Options
+                    
+                    <div className="w-full md:w-auto shrink-0">
+                        <Link href="/contact" className="group w-full md:w-auto bg-brand-cta hover:bg-white hover:text-slate-950 text-white px-10 py-5 rounded-full font-bold transition-all shadow-xl flex items-center justify-center gap-2">
+                            Get Options
+                            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                         </Link>
                     </div>
-                </div>
-            </motion.div>
+                </motion.div>
+            </BeamsBackground>
         </div>
       </section>
 
@@ -349,10 +348,75 @@ export default function DoorsPage() {
         </div>
       </section>
 
+      {/* FAQ SECTION */}
+      <section className="py-24 px-4 max-w-4xl mx-auto">
+        <div className="text-center mb-16">
+          <motion.h2 
+            {...fadeIn}
+            className="text-3xl md:text-5xl font-bold text-brand-text dark:text-white mb-4 tracking-tight"
+          >
+            Door Repair FAQ
+          </motion.h2>
+          <motion.p 
+            {...fadeIn}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="text-slate-500 dark:text-slate-400"
+          >
+            Common questions about our Hampshire door maintenance services.
+          </motion.p>
+        </div>
+        
+        <div className="space-y-4">
+          {[
+            {
+              q: "Does my front door need a new lock mechanism if it's sticking?",
+              a: "In 90% of cases, no. Most sticking doors just need professional realignment because they have dropped over time. Our experts can adjust the hinges to fix the operation without the high cost of a new lock."
+            },
+            {
+              q: "Can you replace broken or faded door handles?",
+              a: "Yes, we carry a wide range of handle styles and finishes—including Chrome, Gold, White, and Black—for both uPVC and composite doors. Even for older, 'discontinued' models, we can usually find a perfect match."
+            },
+            {
+              q: "Is it possible to replace the glass in my door without getting a new door?",
+              a: "Absolutely. We can replace just the double-glazed unit or decorative panel, which is significantly more cost-effective than replacing the entire door structure."
+            },
+            {
+              q: "How do I know if my door hinges are failing?",
+              a: "If your door is sagging, rubbing on the frame, or letting in drafts even when closed, the hinges likely need expert adjustment or replacement. Our 'prevention-first' service can stop a small hinge issue from becoming a total mechanism failure."
+            },
+            {
+              q: "Can you fix a door that won't lock properly?",
+              a: "Yes. Difficult locking is usually a sign that the door and frame are no longer aligned. We specialize in precision adjustments that bring the locking points back into line, making your door easy and safe to use again."
+            }
+          ].map((faq, index) => (
+            <motion.div 
+              key={index}
+              {...fadeIn}
+              transition={{ delay: index * 0.1, duration: 0.6 }}
+              className="p-8 rounded-3xl border border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm"
+            >
+              <h4 className="text-lg font-bold text-brand-text dark:text-white mb-4 flex items-center gap-3">
+                <span className="w-8 h-8 rounded-full bg-brand-primary/10 text-brand-primary flex items-center justify-center shrink-0 text-sm font-bold">?</span>
+                {faq.q}
+              </h4>
+              <p className="text-slate-500 dark:text-slate-400 leading-relaxed pl-11">
+                {faq.a}
+              </p>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
       {/* FINAL CTA */}
       <section className="py-24 max-w-7xl mx-auto px-4 mb-24">
-        <div className="bg-brand-text dark:bg-slate-900 rounded-[3rem] p-12 md:p-24 text-center relative overflow-hidden shadow-2xl">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,#1e293b_0%,transparent_70%)] opacity-30"></div>
+        <div className="bg-brand-text dark:bg-slate-950 rounded-[3rem] p-12 md:p-24 text-center relative overflow-hidden shadow-2xl border border-white/5">
+          <Image 
+            src="/images/site/van-at-work.jpg" 
+            alt="Clearly Secure Van at Work" 
+            fill 
+            className="object-cover opacity-40 group-hover:scale-105 transition-transform duration-1000" 
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/60 to-transparent"></div>
           
           <div className="relative z-10 space-y-8">
             <h2 className="text-4xl md:text-6xl font-bold text-white tracking-tight">Need a Door Fix today?</h2>

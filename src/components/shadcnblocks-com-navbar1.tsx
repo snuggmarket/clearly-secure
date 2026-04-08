@@ -1,4 +1,7 @@
-import { Book, Menu, Sunset, Trees, Zap, Phone, Mail, MapPin } from "lucide-react";
+import { useState } from "react";
+import { Book, Menu, Sunset, Trees, Zap, Phone, Mail, MapPin, ChevronDown, X } from "lucide-react";
+import { AnimatePresence, motion } from "framer-motion";
+import { cn } from "@/lib/utils";
 
 import {
   Accordion,
@@ -9,11 +12,9 @@ import {
 import { Button } from "@/components/ui/button";
 import {
   NavigationMenu,
-  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import {
   Sheet,
@@ -56,6 +57,75 @@ interface Navbar1Props {
   };
 }
 
+const DesktopItem = ({ item }: { item: MenuItem }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  if (item.items) {
+    return (
+      <div 
+        className="relative group py-4 px-2"
+        onMouseEnter={() => setIsOpen(true)}
+        onMouseLeave={() => setIsOpen(false)}
+      >
+        <button className="flex items-center gap-1 bg-transparent text-[13px] font-semibold tracking-wide uppercase opacity-80 hover:opacity-100 transition-opacity dark:text-white group-hover:opacity-100">
+          {item.title}
+          <ChevronDown className={cn("size-3.5 transition-transform duration-200", isOpen && "rotate-180")} />
+        </button>
+
+        <AnimatePresence>
+          {isOpen && (
+            <motion.div
+              initial={{ opacity: 0, y: 10, scale: 0.95 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: 10, scale: 0.95 }}
+              transition={{ duration: 0.2, ease: "easeOut" }}
+              className="absolute top-full left-1/2 -translate-x-1/2 pt-4 z-50"
+            >
+              <div className="w-80 p-3 bg-white dark:bg-[#111827] border border-slate-200 dark:border-white/10 shadow-2xl rounded-xl">
+                <ul className="grid gap-2">
+                  {item.items.map((subItem) => (
+                    <li key={subItem.title}>
+                      <a
+                        href={subItem.url}
+                        className="flex items-center gap-3 p-3 rounded-lg hover:bg-slate-50 dark:hover:bg-white/5 transition-colors group/item"
+                      >
+                        {subItem.icon && (
+                          <div className="size-10 flex items-center justify-center rounded-lg bg-slate-100 dark:bg-white/10 text-brand-cta group-hover/item:scale-110 transition-transform">
+                            {subItem.icon}
+                          </div>
+                        )}
+                        <div>
+                          <div className="text-sm font-bold dark:text-white">
+                            {subItem.title}
+                          </div>
+                          {subItem.description && (
+                            <p className="text-sm leading-snug text-slate-500 dark:text-slate-400 mt-1 line-clamp-2">
+                              {subItem.description}
+                            </p>
+                          )}
+                        </div>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
+    );
+  }
+
+  return (
+    <a 
+      href={item.url}
+      className="text-[13px] font-semibold tracking-wide uppercase opacity-80 hover:opacity-100 transition-opacity dark:text-white px-2 py-4"
+    >
+      {item.title}
+    </a>
+  );
+};
+
 const Navbar1 = ({
   logo = {
     url: "/",
@@ -81,15 +151,13 @@ const Navbar1 = ({
           </a>
         </div>
 
-        <nav className="hidden lg:flex items-center absolute left-1/2 -translate-x-1/2">
-          <NavigationMenu>
-            <NavigationMenuList className="gap-2">
-              {menu.map((item) => renderMenuItem(item))}
-            </NavigationMenuList>
-          </NavigationMenu>
+        <nav className="hidden lg:flex flex-row items-center justify-center gap-8 flex-grow pointer-events-auto">
+          {menu.map((item) => (
+            <DesktopItem key={item.title} item={item} />
+          ))}
         </nav>
 
-        <div className="hidden lg:flex items-center gap-6">
+        <div className="flex-shrink-0 hidden lg:flex items-center gap-4">
           {auth.extra}
           <Button asChild className="bg-brand-cta hover:bg-brand-cta-hover text-white px-7 py-3 rounded-full font-bold text-base shadow-[0_4px_14px_0_rgba(34,197,94,0.2)] transition-all transform hover:-translate-y-0.5 h-auto flex items-center gap-2">
             <a href={auth.signup.url}>
@@ -101,21 +169,32 @@ const Navbar1 = ({
         <div className="block lg:hidden flex items-center gap-4">
           <Sheet>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className="hover:bg-transparent -mr-2">
-                <Menu className="size-6 dark:text-white" />
+              <Button variant="ghost" size="icon" className="group">
+                <Menu className="size-6 group-data-[state=open]:hidden" />
+                <X className="size-6 hidden group-data-[state=open]:block" />
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="overflow-y-auto w-full h-[100dvh] border-none p-6 flex flex-col pt-20">
-              <div className="flex flex-col gap-8">
-                <Accordion
-                  type="single"
-                  collapsible
-                  className="flex w-full flex-col gap-4"
-                >
-                  {menu.map((item) => renderMobileMenuItem(item))}
-                </Accordion>
-                
-                <div className="flex flex-col gap-6 w-full pt-8 border-t border-slate-100 dark:border-white/10">
+            <SheetContent side="right" className="w-full sm:w-[400px] p-0 flex flex-col bg-white dark:bg-slate-900 border-none">
+              <div className="p-6 border-b dark:border-white/10 flex items-center justify-between">
+                <a href={logo.url} className="flex items-center gap-2">
+                  <div className="relative w-40 h-10">
+                    <img src={logo.src} className="w-full h-full object-contain" alt={logo.alt} />
+                  </div>
+                </a>
+                <SheetTrigger asChild>
+                  <Button variant="ghost" size="icon">
+                    <X className="size-6" />
+                  </Button>
+                </SheetTrigger>
+              </div>
+              <div className="flex-1 overflow-y-auto py-6 px-4">
+                <div className="flex flex-col gap-1">
+                  <Accordion type="single" collapsible className="w-full">
+                    {menu.map((item) => renderMobileMenuItem(item))}
+                  </Accordion>
+                </div>
+
+                <div className="flex flex-col gap-6 w-full pt-8 border-t border-slate-100 dark:border-white/10 mt-6">
                   <div className="flex items-center justify-between px-2">
                     <span className="text-sm font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-500">Settings</span>
                     {auth.extra}
@@ -155,58 +234,6 @@ const Navbar1 = ({
   );
 };
 
-const renderMenuItem = (item: MenuItem) => {
-  if (item.items) {
-    return (
-      <NavigationMenuItem key={item.title}>
-        <NavigationMenuTrigger className="bg-transparent hover:bg-white/10 dark:text-white dark:hover:text-white dark:data-[state=open]:bg-white/10 text-sm font-semibold tracking-wide uppercase opacity-80 hover:opacity-100 transition-opacity">
-          {item.title}
-        </NavigationMenuTrigger>
-        <NavigationMenuContent>
-          <ul className="w-80 p-3 bg-white dark:bg-[#111827] border-none shadow-2xl rounded-xl">
-            {item.items.map((subItem) => (
-              <li key={subItem.title}>
-                <NavigationMenuLink asChild>
-                  <a
-                    className="flex select-none gap-4 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-slate-50 dark:hover:bg-white/5 group"
-                    href={subItem.url}
-                  >
-                    <div className="text-brand-primary dark:text-[#7dd3fc]">
-                      {subItem.icon}
-                    </div>
-                    <div>
-                      <div className="text-sm font-bold dark:text-white">
-                        {subItem.title}
-                      </div>
-                      {subItem.description && (
-                        <p className="text-sm leading-snug text-slate-500 dark:text-slate-400 mt-1">
-                          {subItem.description}
-                        </p>
-                      )}
-                    </div>
-                  </a>
-                </NavigationMenuLink>
-              </li>
-            ))}
-          </ul>
-        </NavigationMenuContent>
-      </NavigationMenuItem>
-    );
-  }
-
-  return (
-    <NavigationMenuItem key={item.title}>
-      <NavigationMenuLink asChild>
-        <a
-          className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-semibold tracking-wide uppercase opacity-80 hover:opacity-100 transition-all hover:text-brand-primary dark:text-white dark:hover:text-[#7dd3fc]"
-          href={item.url}
-        >
-          {item.title}
-        </a>
-      </NavigationMenuLink>
-    </NavigationMenuItem>
-  );
-};
 
 const renderMobileMenuItem = (item: MenuItem) => {
   if (item.items) {

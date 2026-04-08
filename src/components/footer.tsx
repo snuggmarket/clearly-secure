@@ -42,7 +42,6 @@ export function Footer() {
             <h3 className="font-bold text-sm uppercase tracking-wider text-slate-800 dark:text-slate-200 mb-6 font-heading">Testimonials</h3>
             <ul className="space-y-4">
               <li><a href="/about" className="text-slate-500 dark:text-slate-400 hover:text-brand-primary transition-colors">About Us</a></li>
-              <li><a href="#services" className="text-slate-500 dark:text-slate-400 hover:text-brand-primary transition-colors">Services</a></li>
               <li><a href="/testimonials" className="text-slate-500 dark:text-slate-400 hover:text-brand-primary transition-colors">Testimonials</a></li>
               <li><a href="/contact" className="text-slate-500 dark:text-slate-400 hover:text-brand-primary transition-colors">Contact</a></li>
             </ul>
@@ -54,7 +53,6 @@ export function Footer() {
               <li><a href="/windows" className="text-slate-500 dark:text-slate-400 hover:text-brand-primary transition-colors">Window Repairs</a></li>
               <li><a href="/doors" className="text-slate-500 dark:text-slate-400 hover:text-brand-primary transition-colors">Door Installations</a></li>
               <li><a href="/locksmith" className="text-slate-500 dark:text-slate-400 hover:text-brand-primary transition-colors">Locksmith Services</a></li>
-              <li><a href="#faqs" className="text-slate-500 dark:text-slate-400 hover:text-brand-primary transition-colors">Common FAQs</a></li>
             </ul>
           </div>
 
@@ -73,7 +71,6 @@ export function Footer() {
                 </div>
                 <div className="flex flex-col">
                   <a href="tel:02393552773" className="text-slate-500 dark:text-slate-400 hover:text-brand-primary transition-colors font-medium">02393 552773</a>
-                  <a href="tel:07896930988" className="text-slate-500 dark:text-slate-400 hover:text-brand-primary transition-colors font-medium text-sm">07896 930988</a>
                 </div>
               </li>
               <li className="flex items-center gap-4 group">

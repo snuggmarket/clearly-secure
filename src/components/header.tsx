@@ -52,6 +52,24 @@ export function Header() {
       ],
     },
     { title: "Testimonials", url: "/testimonials" },
+    {
+      title: "Gallery",
+      url: "#",
+      items: [
+        {
+          title: "Doors",
+          description: "Explore our collection of security and designer doors.",
+          icon: <DoorOpen className="size-5 shrink-0" />,
+          url: "/gallery/doors",
+        },
+        {
+          title: "Windows",
+          description: "See our premium window installations and repairs.",
+          icon: <Layout className="size-5 shrink-0" />,
+          url: "/gallery/windows",
+        },
+      ],
+    },
     { title: "Contact", url: "/contact" },
   ];
 

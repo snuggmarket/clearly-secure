@@ -421,8 +421,14 @@ export default function WindowsPage() {
 
       {/* FINAL CTA */}
       <section className="py-24 max-w-7xl mx-auto px-4 mb-24">
-        <div className="bg-brand-text dark:bg-slate-900 rounded-[3rem] p-12 md:p-24 text-center relative overflow-hidden shadow-2xl">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,#1e293b_0%,transparent_70%)] opacity-30"></div>
+        <div className="bg-brand-text dark:bg-slate-950 rounded-[3rem] p-12 md:p-24 text-center relative overflow-hidden shadow-2xl border border-white/5">
+          <Image 
+            src="/images/site/van-at-work.jpg" 
+            alt="Clearly Secure Van at Work" 
+            fill 
+            className="object-cover opacity-40 group-hover:scale-105 transition-transform duration-1000" 
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/60 to-transparent"></div>
           
           <div className="relative z-10 space-y-8">
             <h2 className="text-4xl md:text-6xl font-bold text-white tracking-tight">Need a Window Fix Fast?</h2>
