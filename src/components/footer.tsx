@@ -50,8 +50,8 @@ export function Footer() {
           <div className="lg:col-span-1">
             <h3 className="font-bold text-sm uppercase tracking-wider text-slate-800 dark:text-slate-200 mb-6 font-heading">Navigation</h3>
             <ul className="space-y-4">
-              <li><a href="/windows" className="text-slate-500 dark:text-slate-400 hover:text-brand-primary transition-colors">Window Repairs</a></li>
-              <li><a href="/doors" className="text-slate-500 dark:text-slate-400 hover:text-brand-primary transition-colors">Door Installations</a></li>
+              <li><a href="/windows" className="text-slate-500 dark:text-slate-400 hover:text-brand-primary transition-colors">Window Repair & Replacement</a></li>
+              <li><a href="/doors" className="text-slate-500 dark:text-slate-400 hover:text-brand-primary transition-colors">Door Repair & Replacement</a></li>
               <li><a href="/locksmith" className="text-slate-500 dark:text-slate-400 hover:text-brand-primary transition-colors">Locksmith Services</a></li>
             </ul>
           </div>
