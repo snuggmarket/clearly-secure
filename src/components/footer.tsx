@@ -30,7 +30,7 @@ export function Footer() {
             />
           </div>
           <p className="text-slate-500 dark:text-slate-400 font-medium max-w-xs md:text-right italic">
-            Locksmith, Window & Door Specialists in Hampshire.
+            Friendly & reliable Window and Door replacement and repair specialists
           </p>
         </div>
 

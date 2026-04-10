@@ -203,7 +203,7 @@ export default function ContactClient() {
                   <Layout className="w-8 h-8" />
                </div>
                <h3 className="font-bold text-slate-900 dark:text-white mb-2">Double Glazing</h3>
-               <p className="text-xs text-slate-500 leading-relaxed max-w-[200px]">Replacing misted units and fixing seals to restore efficiency.</p>
+               <p className="text-xs text-slate-500 leading-relaxed max-w-[200px]">Expert UPV Glazing replacement services</p>
             </div>
             <div className="flex flex-col items-center text-center">
                <div className="w-16 h-16 rounded-full bg-slate-50 dark:bg-slate-900 flex items-center justify-center mb-6 text-[#0281d7]">
