@@ -264,8 +264,20 @@ export default function AboutPage() {
 
       {/* FINAL CTA */}
       <section className="py-24 max-w-7xl mx-auto px-4 mb-24">
-        <div className="bg-brand-text dark:bg-slate-930 rounded-[3rem] p-12 md:p-24 text-center relative overflow-hidden shadow-2xl">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,#1e293b_0%,transparent_70%)] opacity-30"></div>
+        <div className="rounded-[3rem] p-12 md:p-24 text-center relative overflow-hidden shadow-2xl border border-white/10">
+          {/* Background Image with Overlay */}
+          <div className="absolute inset-0 z-0">
+            <Image 
+              src="/images/site/van-at-work.jpg" 
+              alt="Clearly Secure Van at Work" 
+              fill
+              className="object-cover"
+              priority
+            />
+            <div className="absolute inset-0 bg-black/30 transition-colors duration-500"></div>
+          </div>
+          
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,#1e293b_0%,transparent_70%)] opacity-30 z-[1]"></div>
           
           <div className="relative z-10 space-y-8">
             <h2 className="text-4xl md:text-6xl font-bold text-white tracking-tight leading-tight">Need Professional <br className="hidden md:block" /> Glazing or Lock Help?</h2>
