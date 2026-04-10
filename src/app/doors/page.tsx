@@ -53,7 +53,7 @@ export default function DoorsPage() {
               transition={{ delay: 0.2 }}
               className="text-4xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight leading-[1.1]"
             >
-              Expert Door <br className="hidden md:block"/> Repair & Replacement
+              Expert Door Replacement & <br className="hidden md:block"/> Repair service.
             </motion.h1>
             
             <motion.p 
@@ -62,7 +62,7 @@ export default function DoorsPage() {
               transition={{ delay: 0.3 }}
               className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed"
             >
-              Solving sticking doors, broken handles, and alignment issues. Providing a professional finish across Hampshire.
+              Specialising in Door Replacement across Hampshire, with repair services also available. Providing a professional finish every time.
             </motion.p>
             
             <motion.div 
@@ -419,18 +419,23 @@ export default function DoorsPage() {
           <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/60 to-transparent"></div>
           
           <div className="relative z-10 space-y-8">
-            <h2 className="text-4xl md:text-6xl font-bold text-white tracking-tight">Need a Door Fix today?</h2>
+            <h2 className="text-4xl md:text-6xl font-bold text-white tracking-tight">Need a new door?</h2>
             <p className="text-white/70 text-lg max-w-2xl mx-auto leading-relaxed">
-              Contact Lee and Claire directly for an honest, professional service. No sales pressure, just expert solutions.
+              Contact Clearly Secure directly for an honest, professional service. No sales pressure, just expert solutions.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 pt-4">
               <Link href="tel:02393552773" className="w-full sm:w-auto bg-brand-cta hover:bg-brand-cta-hover text-white px-12 py-5 rounded-full font-bold text-xl flex items-center justify-center gap-3 transition-all hover:scale-105 shadow-xl">
                 <Phone className="w-6 h-6" />
                 02393 552773
               </Link>
-              <Link href="/contact" className="w-full sm:w-auto bg-[#00a1cd] hover:bg-[#00a1cd]/90 text-white px-12 py-5 rounded-full font-bold text-xl backdrop-blur-md transition-all hover:scale-105 shadow-xl">
-                Contact Form
-              </Link>
+              <a 
+                href="/Clearly-Secure-Composite-Door-Brochure.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto bg-[#00a1cd] hover:bg-[#00a1cd]/90 text-white px-12 py-5 rounded-full font-bold text-xl backdrop-blur-md transition-all hover:scale-105 shadow-xl flex items-center justify-center gap-2"
+              >
+                View Door Brochure
+              </a>
             </div>
           </div>
         </div>

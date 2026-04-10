@@ -24,15 +24,13 @@ export default function ContactClient() {
             >
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[#0281d7]/10 text-[#0281d7] text-[10px] font-black uppercase tracking-[0.2em] mb-8">
                 <Layout className="w-3.5 h-3.5" />
-                Expert Glazing & Joinery
+                Window & Door Specialists
               </div>
-              <h1 className="text-5xl md:text-7xl font-bold text-slate-950 dark:text-white leading-[1.05] tracking-tight mb-8">
-                Specialist <br />
-                <span className="text-[#0281d7]">Window & Door</span> <br />
-                Repairs
+              <h1 className="text-3xl md:text-5xl font-bold text-slate-950 dark:text-white leading-[1.1] tracking-tight mb-8">
+                Specialist Window and <span className="text-[#0281d7]">Door Replacement</span>
               </h1>
               <p className="text-base text-slate-600 dark:text-slate-400 max-w-lg leading-relaxed font-medium">
-                Fixing misted glass, broken hinges, and installing premium composite doors across Hampshire. Local experts with 30+ years of quality craftsmanship.
+                Specialising in Window & Door Replacement across Hampshire, we also offer window & door repairs and locksmith services. Local experts with 30+ years of quality craftsmanship.
               </p>
             </motion.div>
 
@@ -48,7 +46,7 @@ export default function ContactClient() {
                 </div>
                 <div>
                   <h3 className="font-bold text-slate-900 dark:text-white">Windows</h3>
-                  <p className="text-xs text-slate-500">Misted glass & repairs</p>
+                  <p className="text-xs text-slate-500">Expert Window replacement service</p>
                 </div>
               </div>
               <div className="flex items-center gap-4 group cursor-default">
@@ -57,7 +55,7 @@ export default function ContactClient() {
                 </div>
                 <div>
                   <h3 className="font-bold text-slate-900 dark:text-white">Doors</h3>
-                  <p className="text-xs text-slate-500">Installation & maintenance</p>
+                  <p className="text-xs text-slate-500">Expert Door replacement service</p>
                 </div>
               </div>
             </motion.div>
@@ -165,7 +163,7 @@ export default function ContactClient() {
                     </div>
                     <div className="flex items-center gap-3 text-slate-900 dark:text-white font-bold">
                        <CheckCircle className="w-5 h-5 text-[#0281d7]" />
-                       <span>No Call Out Charge</span>
+                       <span>No charge to quote</span>
                     </div>
                  </div>
               </div>

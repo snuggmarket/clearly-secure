@@ -88,7 +88,7 @@ const reviews = [
     author: "Ian Saynor",
     rating: 5,
     date: "5 months ago",
-    text: "I recently had a window installed by Clearly Secure Locks & Glazing Ltd, and I couldn’t be happier with the service. From start to finish, their communication was excellent — clear, timely, and professional. The pricing was very competitive.",
+    text: "I recently had a window installed by Clearly Secure Glazing and Locks Ltd, and I couldn’t be happier with the service. From start to finish, their communication was excellent — clear, timely, and professional. The pricing was very competitive.",
     photos: []
   },
   {
@@ -160,7 +160,7 @@ export default function TestimonialsPage() {
 
                 <div className="flex flex-col items-center md:items-end gap-4">
                     <a 
-                      href="https://www.google.com/search?q=Clearly+Secure+Locks+%26+Glazing+Ltd+Reviews#lrd=0x487467e2bdb34c5d:0x1402a9e787a959d9,3" 
+                      href="https://www.google.com/search?q=Clearly+Secure+Glazing+and+Locks+Ltd+Reviews#lrd=0x487467e2bdb34c5d:0x1402a9e787a959d9,3" 
                       target="_blank" 
                       rel="noreferrer"
                       className="bg-[#A50021] hover:bg-[#8D001C] text-white px-10 py-4 rounded-full font-bold text-sm uppercase tracking-widest transition-all shadow-lg hover:shadow-xl active:scale-95"
@@ -214,7 +214,7 @@ export default function TestimonialsPage() {
               To read the remaining {totalReviews - reviews.length} verified reviews, please visit our Google Profile.
             </p>
             <a 
-              href="https://www.google.com/search?q=Clearly+Secure+Locks+%26+Glazing+Ltd+Reviews#lrd=0x487467e2bdb34c5d:0x1402a9e787a959d9,3" 
+              href="https://www.google.com/search?q=Clearly+Secure+Glazing+and+Locks+Ltd+Reviews#lrd=0x487467e2bdb34c5d:0x1402a9e787a959d9,3" 
               target="_blank" 
               rel="noreferrer"
               className="inline-flex items-center gap-3 text-brand-primary font-bold hover:underline"

@@ -4,7 +4,7 @@ export default function StructuredData() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Clearly Secure Locks & Glazing Ltd",
+    "name": "Clearly Secure Glazing and Locks Ltd",
     "image": "https://clearly-secure.co.uk/logo.png",
     "@id": "https://clearly-secure.co.uk",
     "url": "https://clearly-secure.co.uk",

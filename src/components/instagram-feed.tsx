@@ -52,7 +52,7 @@ const INSTAGRAM_POSTS: InstagramPost[] = [
   {
     id: "4",
     imageUrl: "/images/instagram/post_4.png",
-    caption: "🏠🚪🔑✅ MEET THE TEAM! 👋 Hi, I'm Claire and I am your first point of call at Clearly Secure Locks and Glazing! I can help with all your window and door repairs and replacement enquiries from booking a suitable time for one of our engineers to visit to providing you with a personal accurate, easy to understand quote.",
+    caption: "🏠🚪🔑✅ MEET THE TEAM! 👋 Hi, I'm Claire and I am your first point of call at Clearly Secure Glazing and Locks! I can help with all your window and door repairs and replacement enquiries from booking a suitable time for one of our engineers to visit to providing you with a personal accurate, easy to understand quote.",
     likes: 56
   },
   {
@@ -64,7 +64,7 @@ const INSTAGRAM_POSTS: InstagramPost[] = [
   {
     id: "6",
     imageUrl: "/images/instagram/post_6.png",
-    caption: "🏠🚪🪟🔑 MEET THE TEAM 🏠🚪🪟🔑 This is Lee, original founder of Clearly Secure Locks and Glazing! With over 30 years in the industry, Lee is our company Surveyor and Locksmith. Lee is friendly and approachable, offering professional and fair advice on all window, door and lock requirements. 🏠🚪🪟🔑",
+    caption: "🏠🚪🪟🔑 MEET THE TEAM 🏠🚪🪟🔑 This is Lee, original founder of Clearly Secure Glazing and Locks! With over 30 years in the industry, Lee is our company Surveyor and Locksmith. Lee is friendly and approachable, offering professional and fair advice on all window, door and lock requirements. 🏠🚪🪟🔑",
     likes: 64
   }
 ];

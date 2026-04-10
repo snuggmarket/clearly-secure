@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     title: "Hampshire Locksmith & Mobile Door / Window Repair Service",
     description: "Expert Locksmith and Window & Door Repair/Replacement in Hampshire.",
     url: "https://clearly-secure.co.uk",
-    siteName: "Clearly Secure Locks & Glazing Ltd",
+    siteName: "Clearly Secure Glazing and Locks Ltd",
     locale: "en_GB",
     type: "website",
   },

@@ -33,13 +33,13 @@ export function Header() {
       items: [
         {
           title: "Windows",
-          description: "Glass repairs, frame fixes, and specialized maintenance.",
+          description: "Window Installation, with glass and frame repairs also available.",
           icon: <Layout className="size-5 shrink-0" />,
           url: "/windows",
         },
         {
           title: "Doors",
-          description: "UPVC, composite, and timber door repairs and installation.",
+          description: "UPVC Door installation, with door repair service also available",
           icon: <DoorOpen className="size-5 shrink-0" />,
           url: "/doors",
         },

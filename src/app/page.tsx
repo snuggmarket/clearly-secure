@@ -35,7 +35,7 @@ export default function Home() {
           <div className="relative z-10 max-w-4xl mx-auto space-y-6">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-dark text-white/90 text-sm font-medium mb-4 shadow-xl">
               <Shield className="w-4 h-4 text-brand-cta" />
-              <span>Hampshire's Most Trusted Locksmith & Glazing Experts</span>
+              <span>Hampshire's Most Trusted Glazing & Locksmith Experts</span>
             </div>
             
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight drop-shadow-md">
@@ -43,7 +43,7 @@ export default function Home() {
             </h1>
             
             <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto leading-relaxed font-light drop-shadow">
-              Fast, professional, and reliable mobile door, window, and locksmith services. We fix it right, the first time.
+              Fast, professional, friendly & reliable Window and Door repair and replacement specialists with full Locksmith service. We get it right the first time
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8">
@@ -88,7 +88,7 @@ export default function Home() {
             <div className="flex flex-col items-center justify-center text-center">
               <span className="text-3xl md:text-4xl font-bold text-brand-primary dark:text-brand-cta mb-1 tracking-tighter">FREE</span>
               <span className="text-brand-text/70 dark:text-slate-400 font-medium text-xs md:text-sm flex items-center gap-2">
-                <PoundSterling className="w-4 h-4 text-green-500" /> No Call Out Charge
+                <PoundSterling className="w-4 h-4 text-green-500" /> No charge to quote
               </span>
             </div>
           </div>
@@ -126,7 +126,7 @@ export default function Home() {
                   Clearly Secure Services
                 </h2>
                 <p className="text-brand-text/70 dark:text-slate-400 text-base leading-relaxed">
-                  Clearly Secure Locks & Glazing offers a family run Locksmith and mobile door/window repair service with same day appointments where possible and no call out/quote charge (Between 9am and 5pm). We cover all of Portsmouth, Havant, Waterlooville, Petersfield, Fareham, Southampton, Emsworth and surrounding areas.
+                  When it comes to window and door installation, Clearly Secure Glazing and Locks makes it our number one priority. We're a family-run locksmith and mobile door/window repair service offering same-day appointments where possible — and there's never a call-out or quote charge between 9am and 5pm. We cover Portsmouth, Havant, Waterlooville, Petersfield, Fareham, Southampton, Emsworth and all surrounding areas.
                 </p>
             </div>
 
@@ -362,7 +362,7 @@ export default function Home() {
                   <span className="text-[10px] font-bold uppercase tracking-widest text-blue-600 dark:text-blue-400">Direct Support</span>
                 </div>
                 <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-brand-cta mb-4">
-                  Contact Lee & Claire now
+                  Contact Clearly Secure
                 </h2>
                 <div className="h-1 w-12 bg-blue-600 rounded-full mb-6"></div>
                 <p className="text-slate-500 dark:text-slate-400 text-base leading-relaxed max-w-md">
@@ -481,7 +481,7 @@ export default function Home() {
               <div className="absolute bottom-8 left-0 right-0 flex justify-center items-center">
                 <div className="flex items-center gap-2 bg-brand-cta/90 backdrop-blur-sm px-5 py-2.5 rounded-full border border-white/20 shadow-xl">
                   <span className="w-2 h-2 rounded-full bg-white animate-pulse"></span>
-                  <span className="text-white text-[11px] font-bold uppercase tracking-[0.15em] antialiased">No Call Out Charge</span>
+                  <span className="text-white text-[11px] font-bold uppercase tracking-[0.15em] antialiased">No charge to quote</span>
                 </div>
               </div>
             </div>

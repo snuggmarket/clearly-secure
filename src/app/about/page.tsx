@@ -132,7 +132,10 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-8 text-slate-500 dark:text-slate-400 text-lg leading-relaxed">
               <p>
-                Clearly Secure Locks & Glazing was founded in 2020 and is a Professional, Friendly Emergency Locksmith and Window / Door Repair Service. Covering all areas of Hampshire, ensuring the safety and security of your property at all times.
+                Clearly Secure Glazing and Locks was founded in 2020 and is a Professional, Friendly service specialising in Window & Door Replacements, as well as window & door repairs and emergency locksmith services.
+              </p>
+              <p>
+                Covering all areas of Hampshire, ensuring the safety and security of your property at all times.
               </p>
               <div className="p-8 md:p-12 rounded-[3rem] border border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-xl relative overflow-hidden group text-left">
                 <div className="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-opacity">

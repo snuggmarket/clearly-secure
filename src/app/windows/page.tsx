@@ -51,7 +51,7 @@ export default function WindowsPage() {
               transition={{ delay: 0.2 }}
               className="text-4xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight leading-[1.1]"
             >
-              Expert Window <br className="hidden md:block"/> Repair & Replacement
+              Expert Window Replacement & <br className="hidden md:block"/> Repair service.
             </motion.h1>
             
             <motion.p 
@@ -61,7 +61,7 @@ export default function WindowsPage() {
               transition={{ delay: 0.3, duration: 0.6 }}
               className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed"
             >
-              Expert solutions for misted glass, broken handles, and draughty windows. Providing a professional finish across Hampshire.
+              Specialising in Window Replacement across Hampshire, with repair services also available. Providing a professional finish every time.
             </motion.p>
             
             <motion.div 
@@ -433,7 +433,7 @@ export default function WindowsPage() {
           <div className="relative z-10 space-y-8">
             <h2 className="text-4xl md:text-6xl font-bold text-white tracking-tight">Need a Window Fix Fast?</h2>
             <p className="text-white/70 text-lg max-w-2xl mx-auto leading-relaxed">
-              Contact Lee and Claire directly for an honest, professional service. No sales pressure, just expert solutions.
+              Contact Clearly Secure directly for an honest, professional service. No sales pressure, just expert solutions.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 pt-4">
               <Link href="tel:02393552773" className="w-full sm:w-auto bg-brand-cta hover:bg-brand-cta-hover text-white px-12 py-5 rounded-full font-bold text-xl flex items-center justify-center gap-3 transition-all hover:scale-105 shadow-xl">
