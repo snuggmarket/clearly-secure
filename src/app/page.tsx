@@ -149,7 +149,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold mb-2">Windows</h3>
                 <p className="text-white/80 text-base leading-relaxed mb-6">
-                  Misted glass replacements, broken hinges, handles, and lock mechanisms for all UPVC and composite windows.
+                  We specialise in UPVC window installation first and foremost, alongside expert repairs to glazing, lock mechanisms, and all associated hardware
                 </p>
                 <div className="mt-auto">
                   <Link href="/windows" className="text-white font-semibold text-sm inline-flex items-center gap-2 hover:gap-3 transition-all group/link">
@@ -189,22 +189,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Locksmith */}
-            <div className="bg-[#fcfcfc] dark:bg-slate-900/50 p-8 rounded-[2rem] border border-slate-100 dark:border-slate-800 flex flex-col h-full shadow-sm">
-              <div className="w-12 h-12 rounded-xl bg-white dark:bg-slate-800 flex items-center justify-center mb-10 text-brand-primary border border-slate-100 dark:border-slate-700 shadow-sm">
-                <Key className="w-6 h-6" />
-              </div>
-              <h3 className="text-xl font-bold text-brand-text dark:text-white mb-2">Locksmith</h3>
-              <p className="text-brand-text/70 dark:text-slate-400 text-base leading-relaxed mb-6">
-                Emergency lockouts, lock changes, upgrades to anti-snap locks, and full security assessments.
-              </p>
-              <div className="mt-auto">
-                <Link href="/locksmith" className="text-brand-primary font-semibold text-sm inline-flex items-center gap-2 hover:gap-3 transition-all group">
-                  Learn more <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform"/>
-                </Link>
-              </div>
-            </div>
-
             {/* Other Services */}
             <div className="bg-[#fcfcfc] dark:bg-slate-900/50 p-8 rounded-[2rem] border border-slate-100 dark:border-slate-800 flex flex-col h-full shadow-sm">
               <div className="w-12 h-12 rounded-xl bg-white dark:bg-slate-800 flex items-center justify-center mb-10 text-brand-primary border border-slate-100 dark:border-slate-700 shadow-sm">
@@ -218,6 +202,22 @@ export default function Home() {
                 <a href="#other" className="text-brand-primary font-semibold text-sm inline-flex items-center gap-2 hover:gap-3 transition-all group">
                   Learn more <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform"/>
                 </a>
+              </div>
+            </div>
+
+            {/* Locksmith */}
+            <div className="bg-[#fcfcfc] dark:bg-slate-900/50 p-8 rounded-[2rem] border border-slate-100 dark:border-slate-800 flex flex-col h-full shadow-sm">
+              <div className="w-12 h-12 rounded-xl bg-white dark:bg-slate-800 flex items-center justify-center mb-10 text-brand-primary border border-slate-100 dark:border-slate-700 shadow-sm">
+                <Key className="w-6 h-6" />
+              </div>
+              <h3 className="text-xl font-bold text-brand-text dark:text-white mb-2">Locksmith</h3>
+              <p className="text-brand-text/70 dark:text-slate-400 text-base leading-relaxed mb-6">
+                Emergency lockouts, lock changes, upgrades to anti-snap locks, and full security assessments.
+              </p>
+              <div className="mt-auto">
+                <Link href="/locksmith" className="text-brand-primary font-semibold text-sm inline-flex items-center gap-2 hover:gap-3 transition-all group">
+                  Learn more <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform"/>
+                </Link>
               </div>
             </div>
           </div>
@@ -347,7 +347,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* INSTAGRAM FEED SECTION */}
+      {/* GALLERY WORK SHOWCASE */}
       <InstagramFeed />
 
       <div className="pt-24 px-4 lg:px-8 max-w-[1600px] mx-auto mb-32">

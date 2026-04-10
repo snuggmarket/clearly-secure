@@ -268,7 +268,7 @@ export default function AboutPage() {
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,#1e293b_0%,transparent_70%)] opacity-30"></div>
           
           <div className="relative z-10 space-y-8">
-            <h2 className="text-4xl md:text-6xl font-bold text-white tracking-tight leading-tight">Need Professional <br className="hidden md:block" /> Lock or Glazing Help?</h2>
+            <h2 className="text-4xl md:text-6xl font-bold text-white tracking-tight leading-tight">Need Professional <br className="hidden md:block" /> Glazing or Lock Help?</h2>
             <p className="text-white/70 text-lg max-w-2xl mx-auto leading-relaxed">
               Our small, dedicated team is here to provide you with the professional, friendly service that has earned us recommendations across Hampshire.
             </p>
