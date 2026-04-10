@@ -274,7 +274,7 @@ export default function AboutPage() {
               className="object-cover"
               priority
             />
-            <div className="absolute inset-0 bg-black/30 transition-colors duration-500"></div>
+            <div className="absolute inset-0 bg-black/40 transition-colors duration-500"></div>
           </div>
           
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,#1e293b_0%,transparent_70%)] opacity-30 z-[1]"></div>
