@@ -7,6 +7,7 @@ import Link from "next/link";
 import TestimonialV2 from "@/components/testimonial-v2";
 import InstagramFeed from "@/components/instagram-feed";
 import StructuredData from "@/components/structured-data";
+import ServiceSelector from "@/components/service-selector";
 
 export default function Home() {
   return (
@@ -28,8 +29,8 @@ export default function Home() {
           </video>
           
           {/* Dark Overlay */}
-          <div className="absolute inset-0 bg-brand-text/70 mix-blend-multiply"></div>
-          <div className="absolute inset-0 bg-gradient-to-b from-brand-text/30 via-transparent to-brand-text/90"></div>
+          <div className="absolute inset-0 bg-brand-text/[0.23] mix-blend-multiply"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-brand-text/10 via-transparent to-brand-text/40"></div>
 
           {/* Hero Content */}
           <div className="relative z-10 max-w-4xl mx-auto space-y-6">
@@ -38,11 +39,11 @@ export default function Home() {
               <span>Hampshire's Most Trusted Glazing & Locksmith Experts</span>
             </div>
             
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight drop-shadow-md">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight drop-shadow-[0_8px_30px_rgb(0,0,0,0.5)]">
               Secure Your Home <br className="hidden md:block"/> With Confidence
             </h1>
             
-            <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto leading-relaxed font-light drop-shadow">
+            <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto leading-relaxed font-normal drop-shadow-[0_4px_12px_rgba(0,0,0,0.6)]">
               Fast, professional, friendly & reliable Window and Door repair and replacement specialists with full Locksmith service. We get it right the first time
             </p>
             
@@ -126,7 +127,7 @@ export default function Home() {
                   Clearly Secure Services
                 </h2>
                 <p className="text-brand-text/70 dark:text-slate-400 text-base leading-relaxed">
-                  When it comes to window and door installation, Clearly Secure Glazing and Locks makes it our number one priority. We're a family-run locksmith and mobile door/window repair service offering same-day appointments where possible — and there's never a call-out or quote charge between 9am and 5pm. We cover Portsmouth, Havant, Waterlooville, Petersfield, Fareham, Southampton, Emsworth and all surrounding areas.
+                  When it comes to window and door replacement, Clearly Secure Glazing and Locks makes it our number one priority. We're a family-run locksmith and mobile door/window repair service offering same-day appointments where possible — and there's never a quote charge between 9am and 5pm. We cover Portsmouth, Havant, Waterlooville, Petersfield, Fareham, Southampton, Emsworth and all surrounding areas.
                 </p>
             </div>
 
@@ -255,7 +256,7 @@ export default function Home() {
                 },
                 {
                   id: "03",
-                  title: "Quality Fitting",
+                  title: "Custom made windows, doors, glass or new units",
                   text: "For custom glass or new units, we check every piece for quality before fitment. We then arrange a final appointment at your convenience, fitting your new units with the precision and care they deserve.",
                   icon: <CheckCircle className="w-6 h-6" />,
                   delay: 0.3
@@ -426,24 +427,9 @@ export default function Home() {
                   />
                 </div>
 
-                <div className="space-y-1.5">
-                  <label className="text-sm font-semibold text-slate-700 dark:text-slate-300 ml-1">Service interested in:</label>
-                  <select 
-                    name="service"
-                    required
-                    className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-800/50 focus:bg-white dark:focus:bg-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-primary/20 focus:border-brand-primary transition-all dark:text-white appearance-none"
-                  >
-                    <option value="">Select a service...</option>
-                    <option value="Window repair">Window repair</option>
-                    <option value="Window replacement">Window replacement</option>
-                    <option value="Door repair">Door repair</option>
-                    <option value="Door replacement">Door replacement</option>
-                    <option value="Shutters">Shutters</option>
-                    <option value="Fascias">Fascias</option>
-                    <option value="Soffits & Guttering">Soffits & Guttering</option>
-                    <option value="Cladding">Cladding</option>
-                    <option value="Locksmith services">Locksmith services</option>
-                  </select>
+                <div className="space-y-4">
+                  <label className="text-sm font-semibold text-slate-700 dark:text-slate-300 ml-1 block mb-3">Services Required (Select all that apply)</label>
+                  <ServiceSelector name="service" required />
                 </div>
 
                 <div className="space-y-1.5">

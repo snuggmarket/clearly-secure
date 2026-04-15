@@ -132,7 +132,7 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-8 text-slate-500 dark:text-slate-400 text-lg leading-relaxed">
               <p>
-                Clearly Secure Glazing and Locks was founded in 2020 and is a Professional, Friendly service specialising in Window & Door Replacements, as well as window & door repairs and emergency locksmith services.
+                Clearly Secure Glazing and Locks was founded in 2020 and is a Professional, Friendly service specialising in Window & Door Replacements, as well as Window & Door Repairs and Emergency Locksmith Services.
               </p>
               <p>
                 Covering all areas of Hampshire, ensuring the safety and security of your property at all times.

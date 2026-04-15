@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Layout, DoorOpen, Star, CheckCircle, Map as MapIcon } from "lucide-react";
+import ServiceSelector from "./service-selector";
 
 export default function ContactClient() {
   // Service Areas list for easy reference
@@ -113,16 +114,9 @@ export default function ContactClient() {
                       </div>
                     </div>
 
-                    <div className="space-y-1.5">
-                      <label className="text-[11px] font-black uppercase tracking-widest text-slate-400 ml-1">Service Needed</label>
-                      <select name="service" required className="w-full px-5 py-4 rounded-xl border border-slate-100 dark:border-slate-800 bg-slate-50/30 dark:bg-slate-900/50 focus:ring-4 focus:ring-slate-100 outline-none transition-all dark:text-white appearance-none">
-                        <option value="">Please select...</option>
-                        <option value="Misted Window Repair">Misted Window Repair</option>
-                        <option value="New Windows">New Windows</option>
-                        <option value="Composite Doors">Composite Doors</option>
-                        <option value="Door Repairs">Door Repairs</option>
-                        <option value="Other">Other</option>
-                      </select>
+                    <div className="space-y-4">
+                      <label className="text-[11px] font-black uppercase tracking-widest text-slate-400 ml-1 block mb-3">Services Required (Select all that apply)</label>
+                      <ServiceSelector name="service" required />
                     </div>
 
                     <div className="space-y-1.5">
