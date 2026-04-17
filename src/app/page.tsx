@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, CheckCircle, Shield, Star, Clock, Phone, Mail, MapPin, PoundSterling, DoorOpen, Key, Layout, Settings, Calendar, Wrench } from "lucide-react";
+import { ArrowRight, CheckCircle, Shield, Star, Clock, Phone, Mail, MapPin, PoundSterling, DoorOpen, Key, Layout, Settings, Calendar, Wrench, Home as HomeIcon } from "lucide-react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -121,14 +121,38 @@ export default function Home() {
         {/* SERVICES SECTION - REDESIGNED */}
         <section id="services" className="py-24 max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Row 1: Header + Windows */}
-            <div className="lg:col-span-2 p-4 md:pr-12 flex flex-col justify-center">
-                <h2 className="text-4xl md:text-5xl font-bold text-brand-cta mb-6 tracking-tight">
-                  Clearly Secure Services
+            {/* Row 1: Header + Shutters + Windows */}
+            <div className="lg:col-span-1 p-4 md:pr-8 flex flex-col justify-center">
+                <h2 className="text-4xl md:text-[44px] font-bold text-brand-cta mb-6 tracking-tight">
+                  Clearly Secure Locks & Glazing
                 </h2>
-                <p className="text-brand-text/70 dark:text-slate-400 text-base leading-relaxed">
+                <p className="text-brand-text/70 dark:text-slate-400 text-sm leading-relaxed">
                   When it comes to window and door replacement, Clearly Secure Glazing and Locks makes it our number one priority. We're a family-run locksmith and mobile door/window repair service offering same-day appointments where possible — and there's never a quote charge between 9am and 5pm. We cover Portsmouth, Havant, Waterlooville, Petersfield, Fareham, Southampton, Emsworth and all surrounding areas.
                 </p>
+            </div>
+
+            {/* Interior Shutters */}
+            <div className="group/card relative rounded-[2rem] overflow-hidden min-h-[300px] flex flex-col h-full border border-slate-100 dark:border-white/5 shadow-sm">
+              {/* Background Image with Overlay */}
+              <div className="absolute inset-0">
+                <Image 
+                  src="/images/shutters/Shutters.jpg" 
+                  alt="Interior Shutters" 
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover/card:scale-110"
+                />
+                <div className="absolute inset-0 bg-black/40 group-hover/card:bg-black/30 transition-colors duration-500"></div>
+              </div>
+
+              <div className="relative z-10 p-8 flex flex-col h-full text-white">
+                <div className="w-12 h-12 rounded-xl bg-white/10 backdrop-blur-md flex items-center justify-center mb-10 text-white border border-white/20">
+                  <Layout className="w-6 h-6" />
+                </div>
+                <h3 className="text-xl font-bold mb-2">Interior Shutters</h3>
+                <p className="text-white/80 text-base leading-relaxed mb-6">
+                  We offer a Made to Measure bespoke Shutter Design / Installation Service for quality Interior Shutters which are practical, efficient and a beautiful addition to any home.
+                </p>
+              </div>
             </div>
 
             {/* Windows (Branded Blue - Top Right) */}
@@ -190,35 +214,56 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Other Services */}
-            <div className="bg-[#fcfcfc] dark:bg-slate-900/50 p-8 rounded-[2rem] border border-slate-100 dark:border-slate-800 flex flex-col h-full shadow-sm">
-              <div className="w-12 h-12 rounded-xl bg-white dark:bg-slate-800 flex items-center justify-center mb-10 text-brand-primary border border-slate-100 dark:border-slate-700 shadow-sm">
-                <Settings className="w-6 h-6" />
+            {/* Fascias, Soffits, Guttering & Cladding */}
+            <div className="group/card relative rounded-[2rem] overflow-hidden min-h-[300px] flex flex-col h-full border border-slate-100 dark:border-white/5 shadow-sm">
+              {/* Background Image with Overlay */}
+              <div className="absolute inset-0">
+                <Image 
+                  src="/images/cladding/Beige-Cladding.jpg" 
+                  alt="Fascias, Soffits, Guttering & Cladding" 
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover/card:scale-110"
+                />
+                <div className="absolute inset-0 bg-black/40 group-hover/card:bg-black/30 transition-colors duration-500"></div>
               </div>
-              <h3 className="text-xl font-bold text-brand-text dark:text-white mb-2">Other Services</h3>
-              <p className="text-brand-text/70 dark:text-slate-400 text-base leading-relaxed mb-6">
-                Fascias, soffits, guttering, and cladding repairs to keep your home protected and looking its best.
-              </p>
-              <div className="mt-auto">
-                <a href="#other" className="text-brand-primary font-semibold text-sm inline-flex items-center gap-2 hover:gap-3 transition-all group">
-                  Learn more <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform"/>
-                </a>
+
+              <div className="relative z-10 p-8 flex flex-col h-full text-white">
+                <div className="w-12 h-12 rounded-xl bg-white/10 backdrop-blur-md flex items-center justify-center mb-10 text-white border border-white/20">
+                  <HomeIcon className="w-6 h-6" />
+                </div>
+                <h3 className="text-xl font-bold mb-2">Fascias, Soffits, Guttering & Cladding</h3>
+                <p className="text-white/80 text-base leading-relaxed mb-6">
+                  We offer a full replacement service for all Fascia, Soffits and Guttering. We can also replace or install any UPVC or Composite Cladding with a range of different colours available to suit all property styles and taste.
+                </p>
               </div>
             </div>
 
             {/* Locksmith */}
-            <div className="bg-[#fcfcfc] dark:bg-slate-900/50 p-8 rounded-[2rem] border border-slate-100 dark:border-slate-800 flex flex-col h-full shadow-sm">
-              <div className="w-12 h-12 rounded-xl bg-white dark:bg-slate-800 flex items-center justify-center mb-10 text-brand-primary border border-slate-100 dark:border-slate-700 shadow-sm">
-                <Key className="w-6 h-6" />
+            <div className="group/card relative rounded-[2rem] overflow-hidden min-h-[300px] flex flex-col h-full border border-slate-100 dark:border-white/5 shadow-sm">
+              {/* Background Image with Overlay */}
+              <div className="absolute inset-0">
+                <Image 
+                  src="/images/locksmith/Door-lock.jpg" 
+                  alt="Locksmith Services" 
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover/card:scale-110"
+                />
+                <div className="absolute inset-0 bg-black/40 group-hover/card:bg-black/30 transition-colors duration-500"></div>
               </div>
-              <h3 className="text-xl font-bold text-brand-text dark:text-white mb-2">Locksmith</h3>
-              <p className="text-brand-text/70 dark:text-slate-400 text-base leading-relaxed mb-6">
-                Emergency lockouts, lock changes, upgrades to anti-snap locks, and full security assessments.
-              </p>
-              <div className="mt-auto">
-                <Link href="/locksmith" className="text-brand-primary font-semibold text-sm inline-flex items-center gap-2 hover:gap-3 transition-all group">
-                  Learn more <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform"/>
-                </Link>
+
+              <div className="relative z-10 p-8 flex flex-col h-full text-white">
+                <div className="w-12 h-12 rounded-xl bg-white/10 backdrop-blur-md flex items-center justify-center mb-10 text-white border border-white/20">
+                  <Key className="w-6 h-6" />
+                </div>
+                <h3 className="text-xl font-bold mb-2">Locksmith Services</h3>
+                <p className="text-white/80 text-base leading-relaxed mb-6">
+                  We operate a full residential Locksmith Service, from emergency call outs to upgrading the security of your doors and windows.
+                </p>
+                <div className="mt-auto">
+                  <Link href="/locksmith" className="text-white font-semibold text-sm inline-flex items-center gap-2 hover:gap-3 transition-all group/link">
+                    Learn more <ArrowRight className="w-4 h-4 group-hover/link:translate-x-0.5 transition-transform"/>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

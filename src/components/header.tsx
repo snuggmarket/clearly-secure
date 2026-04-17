@@ -4,7 +4,7 @@ import * as React from "react";
 import { useTheme } from "next-themes";
 import { ThemeToggle } from "./theme-toggle";
 import { Navbar1 } from "./shadcnblocks-com-navbar1";
-import { Layout, DoorOpen, Key } from "lucide-react";
+import { Layout, DoorOpen, Key, Home } from "lucide-react";
 
 export function Header() {
   const { theme } = useTheme();
@@ -67,6 +67,12 @@ export function Header() {
           description: "See our premium window installations and repairs.",
           icon: <Layout className="size-5 shrink-0" />,
           url: "/gallery/windows",
+        },
+        {
+          title: "Fascias, Soffits & Cladding",
+          description: "View our exterior protection and cladding projects.",
+          icon: <Home className="size-5 shrink-0" />,
+          url: "/gallery/cladding",
         },
       ],
     },

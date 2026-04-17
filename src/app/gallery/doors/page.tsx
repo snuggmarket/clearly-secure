@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X } from 'lucide-react';
 import Image from 'next/image';
 
-const images = Array.from({ length: 20 }, (_, i) => `/images/gallery/doors/door${i + 1}.jpg`);
+const images = Array.from({ length: 20 }, (_, i) => `/images/gallery/doors/door${i + 1}.webp`);
 
 // Split images into 4 columns for masonry layout
 const columns = [

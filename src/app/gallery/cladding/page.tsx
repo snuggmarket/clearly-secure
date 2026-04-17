@@ -5,17 +5,17 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X } from 'lucide-react';
 import Image from 'next/image';
 
-const images = Array.from({ length: 27 }, (_, i) => `/images/gallery/windows/window${i + 1}.webp`);
+const images = Array.from({ length: 19 }, (_, i) => `/images/gallery/cladding/cladding${i + 1}.webp`);
 
 // Split images into 4 columns for masonry layout
 const columns = [
-  images.slice(0, 7),
-  images.slice(7, 14),
-  images.slice(14, 21),
-  images.slice(21, 27),
+  images.slice(0, 5),
+  images.slice(5, 10),
+  images.slice(10, 15),
+  images.slice(15, 19),
 ];
 
-export default function WindowsGallery() {
+export default function CladdingGallery() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   return (
@@ -28,7 +28,7 @@ export default function WindowsGallery() {
           transition={{ duration: 0.6 }}
           className="text-4xl md:text-6xl font-bold tracking-tight mb-4 text-zinc-900 dark:text-white"
         >
-          Our Windows Gallery
+          Fascias, Soffits & Cladding
         </motion.h1>
         <motion.p 
           initial={{ opacity: 0, y: 20 }}
@@ -36,7 +36,7 @@ export default function WindowsGallery() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-lg text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto"
         >
-          Explore our portfolio of window installations across Hampshire. From replacement misted units to full premium window upgrades.
+          Explore our recent Fascia, Soffit, Guttering, and Cladding installations. We use premium products to protect and beautify your home's exterior.
         </motion.p>
       </div>
 
@@ -63,7 +63,7 @@ export default function WindowsGallery() {
                   <div className="aspect-[3/4] relative">
                     <Image
                       src={src}
-                      alt={`Window ${imgIndex + 1}`}
+                      alt={`Cladding Project ${imgIndex + 1}`}
                       fill
                       className="object-cover transition-transform duration-700 md:group-hover:scale-105"
                       sizes="(max-width: 768px) 50vw, 25vw"
@@ -109,14 +109,14 @@ export default function WindowsGallery() {
             >
               <Image
                 src={selectedImage}
-                alt="Enlarged Window View"
+                alt="Enlarged Project View"
                 fill
                 className="object-contain rounded-xl"
                 sizes="100vw"
                 priority
               />
               <div className="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-black/60 to-transparent flex justify-center">
-                 <p className="text-white/80 text-sm font-light tracking-wide uppercase">Clearly Secure Windows - Hampshire's Finest</p>
+                 <p className="text-white/80 text-sm font-light tracking-wide uppercase">Clearly Secure - Fascias, Soffits & Cladding Gallery</p>
               </div>
             </motion.div>
           </motion.div>
