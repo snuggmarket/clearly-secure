@@ -16,7 +16,7 @@ const services = [
   "Door Replacement",
   "UPVC Doors (including French & Patio doors)",
   "Bi-Fold Doors",
-  "Shutters",
+  "Internal Shutters",
   "Fascias / Soffits / Guttering",
   "Cladding"
 ];

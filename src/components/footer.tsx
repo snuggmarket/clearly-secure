@@ -55,6 +55,8 @@ export function Footer() {
               <li><a href="/windows" className="text-slate-500 dark:text-slate-400 hover:text-brand-primary transition-colors">Window Replacement & repair</a></li>
               <li><a href="/doors" className="text-slate-500 dark:text-slate-400 hover:text-brand-primary transition-colors">Door Replacement & Repair</a></li>
               <li><a href="/locksmith" className="text-slate-500 dark:text-slate-400 hover:text-brand-primary transition-colors">Locksmith Services</a></li>
+              <li><a href="/fascias-soffits-guttering-cladding" className="text-slate-500 dark:text-slate-400 hover:text-brand-primary transition-colors">Fascias, Soffits & Cladding</a></li>
+              <li><a href="/interior-shutters" className="text-slate-500 dark:text-slate-400 hover:text-brand-primary transition-colors">Interior Shutters</a></li>
             </ul>
           </div>
 

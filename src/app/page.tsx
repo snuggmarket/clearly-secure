@@ -152,6 +152,11 @@ export default function Home() {
                 <p className="text-white/80 text-base leading-relaxed mb-6">
                   We offer a Made to Measure bespoke Shutter Design / Installation Service for quality Interior Shutters which are practical, efficient and a beautiful addition to any home.
                 </p>
+                <div className="mt-auto">
+                  <Link href="/interior-shutters" className="text-white font-semibold text-sm inline-flex items-center gap-2 hover:gap-3 transition-all group/link">
+                    Learn more <ArrowRight className="w-4 h-4 group-hover/link:translate-x-0.5 transition-transform"/>
+                  </Link>
+                </div>
               </div>
             </div>
 
@@ -235,6 +240,11 @@ export default function Home() {
                 <p className="text-white/80 text-base leading-relaxed mb-6">
                   We offer a full replacement service for all Fascia, Soffits and Guttering. We can also replace or install any UPVC or Composite Cladding with a range of different colours available to suit all property styles and taste.
                 </p>
+                <div className="mt-auto">
+                  <Link href="/fascias-soffits-guttering-cladding" className="text-white font-semibold text-sm inline-flex items-center gap-2 hover:gap-3 transition-all group/link">
+                    Learn more <ArrowRight className="w-4 h-4 group-hover/link:translate-x-0.5 transition-transform"/>
+                  </Link>
+                </div>
               </div>
             </div>
 

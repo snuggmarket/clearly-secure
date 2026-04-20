@@ -49,6 +49,18 @@ export function Header() {
           icon: <Key className="size-5 shrink-0" />,
           url: "/locksmith",
         },
+        {
+          title: "Fascias, Soffits & Cladding",
+          description: "Exterior protection, roofline solutions, and stylish cladding.",
+          icon: <Home className="size-5 shrink-0" />,
+          url: "/fascias-soffits-guttering-cladding",
+        },
+        {
+          title: "Interior Shutters",
+          description: "Bespoke made-to-measure shutters for privacy and style.",
+          icon: <Layout className="size-5 shrink-0" />,
+          url: "/interior-shutters",
+        },
       ],
     },
     { title: "Testimonials", url: "/testimonials" },
