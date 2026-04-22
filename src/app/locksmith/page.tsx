@@ -144,8 +144,8 @@ export default function LocksmithPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-32 pt-16">
           <motion.div {...fadeIn} className="order-2 lg:order-1 relative h-[500px] rounded-[2.5rem] overflow-hidden shadow-2xl">
             <Image 
-              src="/images/lock-replacement.jpg" 
-              alt="Professional door lock replacement" 
+              src="/images/clearly-secure-locks.jpg" 
+              alt="Clearly Secure locks and hardware" 
               fill
               className="object-cover"
             />
